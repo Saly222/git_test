@@ -1,11 +1,11 @@
 export default function Navbar() {
   return (
-    <nav className="flex justify-between items-center bg-blue-600 text-white px-6 py-3 shadow">
-      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center">
-        <h1 className="text-xl font-bold">HealthQuest</h1>
-        <ul className="flex space-x-8 ml-auto">
+    <nav className="bg-blue-600 text-green-150 rounded-b-lg">
+      <div className="flex justify-between items-center px-4 py-4">
+        <h1 className="text-xl font-bold ">HealthQuest</h1>
+        <ul className="flex gap-6 text-md font-medium">
           <li>
-            <a href="#" className="hover:underline color-red-500">
+            <a href="#" className="hover:underline">
               Home
             </a>
           </li>
@@ -38,4 +38,11 @@ export default function Navbar() {
       </div>
     </nav>
   );
+}
+{
+  /* <img (hover effect)
+  src={spartanImg}
+  alt="Spartan workout routines"
+  className="w-80 h-60 rounded shadow-md hover:shadow-2xl transition-shadow duration-300"
+/>; */
 }
