@@ -1,9 +1,10 @@
+import Profile from "./Profile";
 export default function Navbar() {
   return (
     <nav className="bg-blue-600 text-green-150 rounded-b-lg">
       <div className="flex justify-between items-center px-4 py-4">
-        <h1 className="text-xl font-bold ">HealthQuest</h1>
-        <ul className="flex gap-6 text-md font-medium">
+        <h1 className="text-xl font-bold text-white ">HealthQuest</h1>
+        <ul className="flex gap-6 text-md font-medium text-white">
           <li>
             <a href="#" className="hover:underline">
               Home
@@ -29,10 +30,9 @@ export default function Navbar() {
               Recipes
             </a>
           </li>
-          <li>
-            <a href="#" className="hover:underline">
-              Profile
-            </a>
+          <li className="">
+            <Profile />
+            <a href="#" className="hover:underline"></a>
           </li>
         </ul>
       </div>
