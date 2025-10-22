@@ -1,4 +1,7 @@
-import Profile from "./Profile";
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import Profile from "./ProfileLogo";
+import Login from "./Login";
 export default function Navbar() {
   return (
     <nav className="bg-blue-600 text-green-150 rounded-b-lg">
@@ -31,8 +34,9 @@ export default function Navbar() {
             </a>
           </li>
           <li className="">
-            <Profile />
-            <a href="#" className="hover:underline"></a>
+            <div onClick={handleProfileClick} className="cursor-pointer">
+              <Login />
+            </div>
           </li>
         </ul>
       </div>
