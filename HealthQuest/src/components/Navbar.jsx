@@ -1,18 +1,18 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Profile from "./ProfileLogo";
-import Login from "./Login";
+import AuthPage from "./Auth";
 export default function Navbar() {
   return (
     <nav className="bg-blue-600 text-green-150 rounded-b-lg">
       <div className="flex justify-between items-center px-4 py-4">
         <h1 className="text-xl font-bold text-white ">HealthQuest</h1>
         <ul className="flex gap-6 text-md font-medium text-white">
-          <li>
+          <Link to="/Homepage">
             <a href="#" className="hover:underline">
               Home
             </a>
-          </li>
+          </Link>
           <li>
             <a href="#" className="hover:underline">
               Tracking
@@ -34,8 +34,9 @@ export default function Navbar() {
             </a>
           </li>
           <li className="">
-            <div onClick={handleProfileClick} className="cursor-pointer">
-              <Login />
+            <div className="cursor-pointer">
+              {/* <AuthPage /> */}
+              <Profile />
             </div>
           </li>
         </ul>

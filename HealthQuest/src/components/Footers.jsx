@@ -1,4 +1,5 @@
 import Homepage from "../pages/Homepage";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -10,13 +11,15 @@ export default function Footer() {
             Your ultimate fitness tracking companion.
           </p>
           <button className="mt-4 bg-black hover:bg-gray-900 text-white font-semibold py-2 px-4 rounded transition-colors duration-300 ease-in-out">
-            <a href="Profile" className="text-white">
+            <Link to="/auth" className="text-white">
               Join Us
-            </a>
+            </Link>
           </button>
         </div>
         <div className="flex flex-col md:flex-row gap-6 text-white mt-10 md:mt-0">
-          <a href="Homepage">Home</a>
+          <Link to="/Homepage" className="hover:underline cursor:pointer">
+            Home
+          </Link>
           <a href="Tracking">Tracking</a>
           <a href="Goals">Goals</a>
           <a href="Challenges">Challenges</a>
