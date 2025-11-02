@@ -1,5 +1,5 @@
 import { useState } from "react";
-import supabase from "./utilities/supabaseClient";
+import supabase from "./supabaseClient";
 
 export default function AuthPage() {
   const [activeTab, setActiveTab] = useState("email");

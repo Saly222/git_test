@@ -1,9 +1,9 @@
 import React from "react";
 import { FaUser } from "react-icons/fa";
 import { Link } from "react-router-dom";
-export default function Profile() {
+export default function ProfileLogo() {
   return (
-    <Link to="/auth">
+    <Link to="/Auth">
       <div>
         <FaUser className="bg-black text-white rounded-full p-1 text-3xl items-center justify-center cursor-pointer hover:bg-gray-900 transition-colors duration-300 ease-in-out mt-0" />
         <a href="#" className=""></a>

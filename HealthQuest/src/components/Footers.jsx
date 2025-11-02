@@ -1,5 +1,6 @@
 import Homepage from "../pages/Homepage";
 import { Link } from "react-router-dom";
+import AuthPage from "./utilities/Auth";
 
 export default function Footer() {
   return (
@@ -10,11 +11,12 @@ export default function Footer() {
           <p className="text-sm text-white">
             Your ultimate fitness tracking companion.
           </p>
-          <button className="mt-4 bg-black hover:bg-gray-900 text-white font-semibold py-2 px-4 rounded transition-colors duration-300 ease-in-out">
-            <Link to="/auth" className="text-white">
-              Join Us
-            </Link>
-          </button>
+          <Link
+            to="/Auth"
+            className="mt-4 inline-block bg-black hover:bg-gray-900 text-white font-semibold py-2 px-4 rounded transition-colors duration-300 ease-in-out"
+          >
+            Join Us
+          </Link>
         </div>
         <div className="flex flex-col md:flex-row gap-6 text-white mt-10 md:mt-0">
           <Link to="/Homepage" className="hover:underline cursor:pointer">

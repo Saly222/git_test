@@ -1,23 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Profile from "./ProfileLogo";
-import AuthPage from "./Auth";
+import Profile from "./Profile/ProfileLogo";
+import AuthPage from "./utilities/Auth";
 export default function Navbar() {
   return (
     <nav className="bg-blue-600 text-green-150 rounded-b-lg">
       <div className="flex justify-between items-center px-4 py-4">
         <h1 className="text-xl font-bold text-white ">HealthQuest</h1>
         <ul className="flex gap-6 text-md font-medium text-white">
-          <Link to="/Homepage">
-            <a href="#" className="hover:underline">
-              Home
-            </a>
+          <Link to="/Homepage" className="hover:underline">
+            Home
           </Link>
-          <li>
-            <a href="#" className="hover:underline">
-              Tracking
-            </a>
-          </li>
+          <Link to="/Tracking" className="hover:underline">
+            Tracking
+          </Link>
           <li>
             <a href="#" className="hover:underline">
               Goals
