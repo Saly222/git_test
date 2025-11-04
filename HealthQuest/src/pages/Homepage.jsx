@@ -1,4 +1,5 @@
 import spartanImg from "../assets/spartanworkout.jpg";
+import FAQ from "../components/FAQ";
 
 export default function Homepage() {
   return (
@@ -55,6 +56,9 @@ export default function Homepage() {
         <h2 className="text-lg font-semibold text-center md:text-left md:mt-50 ml-auto">
           Personalise workout.
         </h2>
+      </div>
+      <div className="item-center justify-center mt-20 w-[100%] mx-auto mb-10">
+        <FAQ />
       </div>
     </div>
   );

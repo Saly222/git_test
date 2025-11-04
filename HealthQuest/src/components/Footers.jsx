@@ -22,7 +22,9 @@ export default function Footer() {
           <Link to="/Homepage" className="hover:underline cursor:pointer">
             Home
           </Link>
-          <a href="Tracking">Tracking</a>
+          <Link to="/Tracking" className="hover:underline cursor:pointer">
+            Tracking
+          </Link>
           <a href="Goals">Goals</a>
           <a href="Challenges">Challenges</a>
           <a href="Recipes">Recipes</a>

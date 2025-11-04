@@ -5,6 +5,7 @@ import "../index.css";
 import Homepage from "./Homepage.jsx";
 import FAQ from "../components/FAQ.jsx";
 import Footers from "../components/Footers.jsx";
+import Tracking from "./Tracking.jsx";
 import ProfileLogin from "../components/utilities/LoginPage.jsx";
 import ProfilePage from "../components/Profile/ProfilePage.jsx";
 import Profile from "../components/Profile/Profile.jsx";
@@ -41,6 +42,7 @@ function App() {
       <Routes>
         {/* Homepage route */}
         <Route path="/Homepage" element={<Homepage />} />
+        <Route path="/Tracking" element={<Tracking />} />
 
         {/* Auth route */}
         <Route
@@ -57,7 +59,7 @@ function App() {
         {/* Default route */}
         <Route path="*" element={<Navigate to="/Homepage" />} />
       </Routes>
-      <FAQ />
+
       <Footers />
     </div>
   );
