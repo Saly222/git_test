@@ -1,5 +1,6 @@
 import CenterContainer from "../components/CenterContainer";
 import CalculatorBMI from "../components/utilities/BMI";
+import CalorieCal from "../components/utilities/CalorieCal";
 import { useState } from "react";
 export default function Tracking() {
   const [progess, setProgess] = useState("");
@@ -55,8 +56,11 @@ export default function Tracking() {
           Current Progress
         </label>
       </div>
-      <div className="text-white flex flex-col md:flex-col mt-20">
+      <div className="text-white flex md:flex sm:flex">
         <CalculatorBMI></CalculatorBMI>
+      </div>
+      <div className="text-white flex md:flex sm:flex mt-50">
+        <CalorieCal></CalorieCal>
       </div>
     </div>
   );

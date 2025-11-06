@@ -7,25 +7,25 @@ export default function CalculatorBMI() {
   const [weight, SetWeight] = useState("");
   const [bmiCategory, SetBmiCategory] = useState("");
   const [bmi, SetBmi] = useState(null);
-  const [error, setError] = useState("");
+  const [error, SetError] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
     const h = parseFloat(height);
     const w = parseFloat(weight);
     const a = parseFloat(age);
     if (!height || !weight) {
-      setError("Please enter valid height and weight. ");
+      SetError("Please enter valid height and weight. ");
       return;
     }
     if (h <= 0 || w <= 0) {
-      setError("Height and Weight must be greater then zero.");
+      SetError("Height and Weight must be greater then zero.");
       return;
     }
     if (a < 2 || a > 120) {
-      setError("Please provide an age between 2 and 120. ");
+      SetError("Please provide an age between 2 and 120. ");
       return;
     }
-    setError("");
+    SetError("");
     const heightInMeters = h / 100;
     const bmiValue = w / (heightInMeters * heightInMeters);
     SetBmi(bmiValue.toFixed(2));
@@ -41,9 +41,13 @@ export default function CalculatorBMI() {
   };
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      <form
+        onSubmit={handleSubmit}
+        className="flex flex-col md:flex-col sm:flex-col mb-10"
+      >
         <label htmlFor="Age"> Age</label>
         <input
+          className="border p-2 mr-4 rounded bg-gray-800 text-white"
           type="number"
           id="age"
           name="age"
@@ -73,6 +77,7 @@ export default function CalculatorBMI() {
 
         <label htmlFor="Height">Height</label>
         <input
+          className="border p-2 mr-4 rounded bg-gray-800 text-white"
           type="number"
           id="height"
           name="height"
@@ -81,6 +86,7 @@ export default function CalculatorBMI() {
         />
         <label htmlFor="Weight">Weight</label>
         <input
+          className="border p-2 mr-4 rounded bg-gray-800 text-white"
           type="number"
           id="weight"
           name="weight"
