@@ -5,7 +5,7 @@ import AuthPage from "./utilities/Auth";
 export default function Footer() {
   return (
     <footer className="bg-blue-600 py-20 px-10">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center">
+      <div className="max-w-6xl mx-auto flex md:flex-col sm:flex-col justify-between items-start md:items-center">
         <div>
           <h1 className="text-xl font-bold text-white">HealthQuest</h1>
           <p className="text-sm text-white">
@@ -18,7 +18,7 @@ export default function Footer() {
             Join Us
           </Link>
         </div>
-        <div className="flex flex-col md:flex-row gap-6 text-white mt-10 md:mt-0">
+        <div className="flex md:flex-col sm:flex-col gap-4 text-white mt-10 md:mt-0">
           <Link to="/Homepage" className="hover:underline cursor:pointer">
             Home
           </Link>

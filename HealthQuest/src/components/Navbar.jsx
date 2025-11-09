@@ -14,11 +14,10 @@ export default function Navbar() {
           <Link to="/Tracking" className="hover:underline">
             Tracking
           </Link>
-          <li>
-            <a href="#" className="hover:underline">
-              Goals
-            </a>
-          </li>
+          <Link to="/Goals" className="hover:underline">
+            Goals
+          </Link>
+
           <li>
             <a href="#" className="hover:underline">
               Challenges
