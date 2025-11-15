@@ -11,7 +11,6 @@ import ProfilePage from "../components/Profile/ProfilePage.jsx";
 import Profile from "../components/Profile/Profile.jsx";
 import AuthPage from "../components/utilities/Auth.jsx";
 import supabase from "../components/utilities/supabaseClient.js";
-import Goals from "./Goals.jsx";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -44,7 +43,6 @@ function App() {
         {/* Homepage route */}
         <Route path="/Homepage" element={<Homepage />} />
         <Route path="/Tracking" element={<Tracking />} />
-        <Route path="/Goals" element={<Goals />} />
 
         {/* Auth route */}
         <Route

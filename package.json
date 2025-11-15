@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "\"Helo Odin!\"",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/Saly222/git_test/issues"
   },
-  "homepage": "https://github.com/Saly222/git_test#readme"
+  "homepage": "https://github.com/Saly222/git_test#readme",
+  "dependencies": {
+    "framer-motion": "^12.23.24",
+    "react-icons": "^5.5.0",
+    "react-use-measure": "^2.1.7"
+  }
 }

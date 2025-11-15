@@ -11,7 +11,7 @@ export default function Profile({ user }) {
       <div className="bg-white shadow-md rounded-2xl p-8 max-w-md w-full text-center">
         <h1 className="text-2xl font-bold mb-2">Welcome, {user.email} 👋</h1>
         <p className="text-gray-600 mb-6">
-          Here’s your FitTrack profile dashboard.
+          Here's your FitTrack profile dashboard.
         </p>
 
         <div className="border rounded-xl p-4 text-left space-y-2 bg-gray-50 mb-6">
